@@ -1,11 +1,15 @@
+html{
+   scroll-behavior: smooth;
+}
 body{
     font-family:'opensans-regular', sans-serif;
     font-size: 20px;
     line-height: 30px;
+    
 }
 header {
     position: relative;
-    height: 750px;
+    height: 100vh;
     min-height: 500px;
     width: 100%;
     background: #161415 url("./images/him.jpg") no-repeat top center;
@@ -15,10 +19,8 @@ header {
     overflow: hidden;
  }
 
-#about{
-   height: 750px;
-   
-}
+
+
 
 #about img{
    
@@ -55,7 +57,7 @@ ul#nav {
     line-height: 32px;
      text-decoration: none;
     text-align: left;
-    color: #fff;
+    color: black;
  
      -webkit-transition: color .2s ease-in-out;
      -moz-transition: color .2s ease-in-out;
@@ -72,11 +74,15 @@ ul#nav {
  }
 
  section{
+   background-color: #ffffff;
+   margin-top: 36px;
    display: flex;
    flex-direction: column;
    align-items: center;
  }
-
+section h3 {
+ margin: 0;
+}
  .elementdesc{
    max-width: 800px;
  }
