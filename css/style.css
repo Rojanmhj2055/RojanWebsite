@@ -1,0 +1,151 @@
+html{
+   scroll-behavior: smooth;
+}
+body{
+    font-family:'opensans-regular', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    
+}
+header {
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+    width: 100%;
+    background: #161415 url("../images/him.jpg") no-repeat top center;
+    background-size: cover;
+     -webkit-background-size: cover;
+    text-align: center;
+    overflow: hidden;
+ }
+
+
+
+
+#about img{
+   
+      height: 12rem;
+      width: 12rem;
+      border: 1px solid #F06000;
+      border-radius: 50%;
+      margin: 0.9rem 1rem 0 2rem;
+      float: left;
+  
+}
+
+ul#nav {
+    min-height: 48px;
+    width: auto;
+ 
+    /* center align the menu */
+    text-align: center;
+ }
+ ul#nav li {
+    position: relative;
+    list-style: none;
+    height: 48px;
+    display: inline-block;
+ }
+ 
+ /* Links */
+ ul#nav li a {
+ 
+ /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+ 
+    display: inline-block;
+    padding: 8px 13px;
+    line-height: 32px;
+     text-decoration: none;
+    text-align: left;
+    color: black;
+ 
+     -webkit-transition: color .2s ease-in-out;
+     -moz-transition: color .2s ease-in-out;
+     -o-transition: color .2s ease-in-out;
+     -ms-transition: color .2s ease-in-out;
+     transition: color .2s ease-in-out;
+ }
+ 
+ ul#nav li a:active { background-color: transparent !important; }
+ ul#nav li.current a { color: #F06000; }
+
+ .intro{
+    margin-top: 189px;
+ }
+
+ section{
+   background-color: #ffffff;
+   margin-top: 36px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+section h3 {
+ margin: 0;
+}
+ .elementdesc{
+   max-width: 800px;
+ }
+ 
+ h5{
+   margin: 0;
+ }
+.skillbar ul{
+   margin: 0;
+}
+
+ section#contact{
+ background-color: #252525;
+ color: aliceblue;
+ 
+ }
+
+ #contact h1{
+   margin: 0;
+ }
+
+ /* .intro-contact{
+   margin-top: 25px;
+   align-items: center;
+ }
+
+ .intro-contact h3{
+
+   margin-left: 40%;
+ } */
+
+ #contact a{
+   text-decoration: none;
+ }
+ #contact .wrapper{
+   width: 80%;
+   display: flex;
+   padding: 0 2.5rem 0 2.5rem;
+   margin: 1.5rem 0 1.5rem 0;
+  justify-content: space-between;
+ }
+
+ .icons{
+  
+   text-align: center;
+   color: whitesmoke;
+ }
+ .icons a{
+   text-align: center;
+   padding: 0 2px 0 2px;
+ }
+
+ .para p{
+   margin: 0;
+ }
+ i{
+  color: aqua;
+ }
+
+ @media screen and (max-width: 661px) {
+   #contact .wrapper{
+      width: 100%;
+      
+    }
+ }
