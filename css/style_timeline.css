@@ -3,16 +3,18 @@
   }
 .timeline {
     position: relative;
-    max-width: 800px;
+ width: 800px; 
     margin: 0 auto;
 
-    /* background-color: #474e5d; */
+    background-color:#ffffff ;
   }
-.timeline h3{
+.timeline h3,h6{
     margin: 0;
 }
+
 .timeline p{
     margin: 0;
+    font-size: 14px;
 }
  .timeline::before{
     content: "Education";

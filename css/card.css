@@ -1,0 +1,66 @@
+/*  This is for the Project section */
+section#projects{
+    height: 100%;
+    width: 100%;
+    background-color: #0a192f; 
+}
+
+.project-container p,h1{
+    margin:0;
+}
+
+.project-container{
+    max-width: 900px;
+    margin: 0rem 0 2rem 2rem;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-title{
+    display: block;
+    content: "Projects";
+    font-size: 30px;
+   margin-top: 25px;
+    color: whitesmoke;
+    text-align: center;
+   }
+
+.card{
+    
+    background-color: #10213e;
+    position: relative;
+    margin:0.5rem;
+    padding:2rem 1.75rem;
+    border-radius: 16px;
+    color:#979cbb;
+    width: 269px;
+    transition: 1s all ease;
+}
+.card-title h1{
+    color:#979cbb;
+    font-size: 24px;
+    margin:0px 0px 12px;
+}
+.card-description {
+    color:#7e8087;
+    font-size: 18px;
+    padding: 0px 0px 40px;
+}
+.card-header a{
+position: absolute;
+left:235px;
+top:10px;
+}
+
+.card-tech{
+    font-size: 16px;
+    padding: 0;
+}
+
+.card:hover{
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
+    transition: 1s ease;
+    background-color: #223351;
+}

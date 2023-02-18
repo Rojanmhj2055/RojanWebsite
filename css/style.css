@@ -41,11 +41,16 @@ ul#nav {
     /* center align the menu */
     text-align: center;
  }
- ul#nav li {
+ ul#nav li{
     position: relative;
     list-style: none;
     height: 48px;
     display: inline-block;
+    transition: all 1s ease;
+ }
+
+ ul#nav li a:hover{
+  color:#223351;
  }
  
  /* Links */
@@ -73,10 +78,12 @@ ul#nav {
  .intro{
     margin-top: 189px;
  }
-
+.skills{
+  background-color: #ffffff;
+}
  section{
-   background-color: #ffffff;
-   margin-top: 36px;
+   background-color: #f7fafc;
+   
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -86,8 +93,17 @@ section h3 {
 }
  .elementdesc{
    max-width: 800px;
+   background-color: #ffffff;
+   margin-top: 25px;
  }
- 
+ .elementdesc::before{
+  display: block;
+  content: "About Me  👋🏽";
+  font-size: 25px;
+  margin: 10px;
+  text-align: center;
+ }
+
  h5{
    margin: 0;
  }
@@ -149,3 +165,48 @@ section h3 {
       
     }
  }
+/* Experience Container for experience*/
+.exp-container{
+ width: 800px;
+ background-color: #ffffff;
+}
+
+.exp-container::before{
+  display: block;
+  content: "Experience";
+  font-size: 30px;
+ margin-top: 25px;
+  color: #2d3748;
+  text-align: center;
+ }
+
+.exp-container p{
+  margin:0;
+  color:#2d3748;
+  font-size: 14px;
+}
+.exp-container .exp-desc p{
+  font-size: 16px;
+}
+.exp-container h1{
+  margin:0;
+  color:#2d3748;
+  font-size: 20px;
+}
+.exp-name{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*End of the  Experience Container for experience*/
+ .reveal{
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}

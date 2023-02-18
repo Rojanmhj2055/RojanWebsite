@@ -6,29 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style_timeline.css">
+    <link rel="stylesheet" href="./css/card.css">
     <script src="https://kit.fontawesome.com/4b9dbb5e12.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <header id ="top">
+    <header id ="top" >
         <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a  href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#experience">Experience</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
-            <li><a class="smoothscroll" href="#activities">Activities</a></li>
-            
-            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+            <li><a  href="#education">Education</a></li>
+	         <li><a href="#experience">Experience</a></li>
+            <li><a  href="#projects">Projects</a></li>
+            <li><a  href="#contact">Contact</a></li>
+            <li><a  href="./images/Rojan Maharjan Resume 2023.pdf" target="_blank" download="./images/Rojan Maharjan Resume 2023.pdf">Resume</a></li>
+            <li><div class="icons">
+                
+                <a target="_blank" href="https://github.com/Rojanmhj2055">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/rojan-maharzan-203561180/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a target="_blank" href="mailto:rojanmhj@gmail.com">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+
+            </div></li>
          </ul>
          <div class="intro">
             <h1>Rojan Maharjan</h1>
             <h5>Software Engineer | Data Engineer | Machine Learning Engineer</h5>
         </div>
     </header>
-    <section id="about">
-            <h3>About</h3>
+    <section id="about" >
         
-       <div class="elementdesc"> 
+       <div class="elementdesc reveal" > 
         <img src="/images/128619689_3180819225356527_6646633089119118464_n.jpg" alt="Profile pic">
 
         <p >I am, essentially, a curious data-driven software engineer with dreams to carve out a career path that allows me to utilize and expand my skillset as a Data Engineer, Data Scientist and ML Engineer.
@@ -37,9 +50,9 @@
              hypothetical model created on a whiteboard to an actual coding of the model.</p>
        </div>
        
-       <div class="skills">
-        <h3>Technical Skills</h3>
-        <ul class="skillbar">
+       <div class="skills ">
+        <h3 class="reveal">Technical Skills</h3>
+        <ul class="skillbar reveal">
             <li>
                 <b>Languages :</b>  Python, JavaScript,CSS, HTML, C++, Java
             </li>
@@ -53,32 +66,128 @@
 
         </ul>
        </div>
-       
-       <div class="timeline">
-        
-        <div class="container left">
-            <div class="content">
-                <h3>Bachelor's Degree</h3>
-              <h5>California State University</h5>
-              <h5>August 2020 - May 2023</h5>
-              <p>Majored in computer science, specialized in Artificial Intelligence.</p><p> <b>Minor in Mathematics </b></p>
-            </div>
-          </div>
-          <div class="container right">
-            <div class="content">
-                <h3>High School</h3>
-              <h5>Prasadi Academy, Nepal</h5>
-              <h5>August 2015 - May 2016</h5>
-              <p></p>
-            </div>
-          </div>
-       </div>
-       
-       
+  
     </section>
-
+    <section id="education">
+        <div class="timeline ">
+        
+            <div class="container reveal left">
+                <div class="content">
+                    <h3>Bachelor's Degree</h3>
+                  <h6>California State University</h6>
+                  <h6>August 2020 - May 2023</h6>
+                  <p>Majored in computer science, specialized in Artificial Intelligence.</p><p> <b>Minor in Mathematics </b></p>
+                </div>
+              </div>
+              <div class="container reveal right">
+                <div class="content">
+                    <h3>High School</h3>
+                  <h6>Prasadi Academy, Nepal</h6>
+                  <h6>August 2015 - May 2016</h6>
+                  <p></p>
+                </div>
+              </div>
+           </div>
+    </section>
+    
     <section id ="experience">
-        <h3> Experience</h3>
+       
+        <div class="exp-container">
+        <div class="content">
+            <div class="exp-name">
+                <h1>Rolang Technologies</h1> <p>June 2022 - Aug 2022 </p>
+            </div>
+            <p class="loc">Data Engineer Intern</p>
+            <div class="exp-desc">
+                <p>• Built a migration pipeline from Oracle database to ADLS gen 2 using Stream Sets pipelines which helped in scaling database for future.</p>
+                   <p> • Maintain optimal data processing pipeline architecture using PySpark and Azure Data Factory to reduce time complexity by 3 hours.</p>
+                   <p> • Spearheaded key performance indicator (KPI) development for projects by making a detailed analysis and reporting of past project data and customer feedback using python, increasing average customer satisfaction rating by 8%.
+                    </p>
+            </div>
+            
+
+        </div>
+        
+        </div>
+    </section>
+    <section id="projects">
+        <h1 class="project-title">Projects</h1>
+        <div class="project-container">
+            <div class="card">
+                <div class="card-header">
+                    <a target="_blank" href="https://github.com/Rojanmhj2055/Drug-Review-Prediction">
+                        <i class="fa-brands fa-github fa-1x"></i>
+                    </a>
+                </div>
+                <div class="card-title"><h1>Drug Review Prediction</h1></div>
+                <div class="card-description">
+                   <p>• Trained CNN, DNN, logistic regression and SVC to classify whether the sentiment of a drug review is positive with an accuracy of 92%.
+                     SMOTE technique for sampling the imbalanced dataset which increased the accuracy of the model by 8%. 
+                     </p>
+                </div>
+                <div class="card-tech">
+                   <p> Python, TensorFlow, Keras  </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a target="_blank" href="https://github.com/Rojanmhj2055/AzureAnalytics">
+                        <i class="fa-brands fa-github fa-1x"></i>
+                    </a>
+                </div>
+                <div class="card-title"><h1>NewYork Taxi Dataset</h1></div>
+                <div class="card-description">
+                   <p> Data Ingestion, cleaning, validation, and processing data using ADF.
+                    • Visualized key statistics like customer trends and average tip per mile driven by neighborhood and by time in user friendly dashboards
+                     </p>
+                </div>
+                <div class="card-tech">
+                   <p> Docker, Microsoft Azure, Data Factory, Tableau</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a target="_blank" href="https://github.com/Rojanmhj2055">
+                        <i class="fa-brands fa-github fa-1x"></i>
+                    </a>
+                </div>
+                <div class="card-title"><h1>Scheduling Application</h1></div>
+                <div class="card-description">
+                   <p>Working with a yea rlong senior project with team of five people to create a scheduling app for a client.  </p>
+                </div>
+                <div class="card-tech">
+                   <p> Angular js, Vendia (cloud), Spring boot, Jest </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a target="_blank" href="https://github.com/Rojanmhj2055/FakeNewsDetector">
+                        <i class="fa-brands fa-github fa-1x"></i>
+                    </a>
+                </div>
+                <div class="card-title"><h1>Fake News Detector</h1></div>
+                <div class="card-description">
+                   <p> NLP model to detect a sentiment on a news with GIFs </p>
+                </div>
+                <div class="card-tech">
+                   <p> Flask, Tokenizer, Tensorflow, LSTM </p>
+                </div>
+            </div>
+            <!-- <div class="card">
+                <div class="card-header">
+                    <a target="_blank" href="https://github.com/Rojanmhj2055">
+                        <i class="fa-brands fa-github fa-1x"></i>
+                    </a>
+                </div>
+                <div class="card-title"><h1>Project Name</h1></div>
+                <div class="card-description">
+                   <p> Small description </p>
+                </div>
+                <div class="card-tech">
+                   <p> Technologies used </p>
+                </div>
+            </div> -->
+        </div>
     </section>
     <section id="contact">
        
@@ -90,7 +199,7 @@
             </div>
             <div class="icons">
                 <a target="_blank" href="https://github.com/Rojanmhj2055">
-                    <i class="fa-brands fa-github fa-1x"></i>
+                    <i class="fa-brands fa-github"></i>
                 </a>
                 <a target="_blank" href="https://www.linkedin.com/in/rojan-maharzan-203561180/">
                     <i class="fa-brands fa-linkedin"></i>
@@ -110,5 +219,7 @@
             <a target="_blank" href="https://www.linkedin.com/in/rojan-maharzan-203561180/">Linkedln profile</a>
         </div> -->
     </section>
+
+    <script src="./js/animate.js"></script>
 </body>
 </html>
