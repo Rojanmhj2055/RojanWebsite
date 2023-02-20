@@ -96,6 +96,9 @@ section h3 {
    background-color: #ffffff;
    margin-top: 25px;
  }
+ .elementdesc p{
+  padding:5px;
+ }
  .elementdesc::before{
   display: block;
   content: "About Me  👋🏽";
@@ -159,12 +162,7 @@ section h3 {
   color: aqua;
  }
 
- @media screen and (max-width: 661px) {
-   #contact .wrapper{
-      width: 100%;
-      
-    }
- }
+
 /* Experience Container for experience*/
 .exp-container{
  width: 800px;
@@ -209,4 +207,21 @@ section h3 {
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
+}
+
+@media screen and (max-width: 661px) {
+
+  .exp-container{
+    width:100%;
+  }
+  #contact .wrapper{
+    width: 100%;
+    
+  }
+
+  #about img{
+   float: none;
+   margin-left:25%;
+  }
+
 }
