@@ -33,7 +33,7 @@ section#projects{
     padding:2rem 1.75rem;
     border-radius: 16px;
     color:#979cbb;
-    width: 269px;
+    width: 283px;
     transition: 1s all ease;
 }
 .card-title h1{
@@ -45,6 +45,14 @@ section#projects{
     color:#7e8087;
     font-size: 18px;
     padding: 0px 0px 40px;
+    height: 330px;
+}
+.card-description p{
+    font-size: 16px;
+    line-height: 2rem;
+}
+.card-description i{
+    padding: 2px;
 }
 .card-header a{
 position: absolute;
