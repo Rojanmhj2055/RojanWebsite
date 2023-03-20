@@ -23,7 +23,7 @@ header {
 
 
 
-#about img{
+.profile{
    
       height: 12rem;
       width: 12rem;
@@ -90,6 +90,7 @@ ul#nav {
  }
 section h3 {
  margin: 0;
+ padding-left: 10px;
 }
  .elementdesc{
    max-width: 800px;

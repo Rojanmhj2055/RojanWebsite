@@ -10,6 +10,7 @@
   }
 .timeline h3,h6{
     margin: 0;
+    padding:0 !important;
 }
 
 .timeline p{
@@ -117,7 +118,12 @@
     .timeline::after {
     left: 31px;
     }
-    
+    /*
+    For Certifications 
+    */
+    .certification{
+      width: 100%;
+    }
     /* Full-width containers */
     .container {
     width: 100%;
