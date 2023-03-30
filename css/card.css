@@ -1,4 +1,9 @@
 /*  This is for the Project section */
+:root{
+    --text-color:black;
+    --background-color:#f7fafc;
+    --div-background-color:#ffffff;
+  }
 section#projects{
     height: 100%;
     width: 100%;
@@ -59,7 +64,9 @@ position: absolute;
 left:235px;
 top:10px;
 }
-
+.card-header i{
+    color: white !important;
+}
 .card-tech{
     font-size: 16px;
     padding: 0;
@@ -84,7 +91,7 @@ top:10px;
 .certification{
     width: 100%;
     max-width: 800px;
-   background-color: white;
+   background-color: var(--div-background-color);
    padding-bottom: 25px;
 }
 .cert{

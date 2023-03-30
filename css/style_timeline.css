@@ -1,12 +1,18 @@
+:root{
+  --text-color:black;
+  --background-color:#f7fafc;
+  --div-background-color:#ffffff;
+}
+
 * {
     box-sizing: border-box;
   }
 .timeline {
     position: relative;
- width: 800px; 
+  width: 800px; 
     margin: 0 auto;
 
-    background-color:#ffffff ;
+    background-color:var(--div-background-color) ;
   }
 .timeline h3,h6{
     margin: 0;
@@ -28,12 +34,13 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+    color: var(--text-color);
 } 
 .timeline::after{
     content: "";
     position:absolute;
     width: 2px;
-    background-color: black;
+    background-color: var(--text-color);
     top: 50px;
     bottom: 0;
     left:50%;
@@ -78,9 +85,9 @@
   width: 0;
   z-index: 1;
   right: 15px;
-  border: medium solid black;
+  border: medium solid var(--text-color);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent black;
+  border-color: transparent transparent transparent var(--text-color);
 }
 /* Add arrows to the right container (pointing left) */
 .right::before {
@@ -93,7 +100,7 @@
   left: 30px;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
-  border-color: transparent black transparent transparent;
+  border-color: transparent var(--text-color) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -104,9 +111,10 @@
   /* The actual content */
   .content {
     padding: 20px 30px;
-    background-color: white;
+    background-color: var(--div-background-color);
     position: relative;
     border-radius: 6px;
+    color: var(--text-color);
   }
   
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -134,9 +142,9 @@
     /* Make sure that all arrows are pointing leftwards */
     .container::before {
     left: 60px;
-    border: medium solid white;
+    border: medium solid var(--text-color);
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent var(--text-color) transparent transparent;
     }
   
     /* Make sure all circles are at the same spot */

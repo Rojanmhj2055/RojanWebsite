@@ -1,3 +1,8 @@
+:root{
+  --text-color:black;
+  --background-color:#f7fafc;
+  --div-background-color:#ffffff;
+}
 html{
    scroll-behavior: smooth;
 }
@@ -79,10 +84,11 @@ ul#nav {
     margin-top: 189px;
  }
 .skills{
-  background-color: #ffffff;
+  background-color: var(--div-background-color);
+  color: var(--text-color);
 }
  section{
-   background-color: #f7fafc;
+   background-color: var(--background-color);
    
    display: flex;
    flex-direction: column;
@@ -91,14 +97,16 @@ ul#nav {
 section h3 {
  margin: 0;
  padding-left: 10px;
+ color: var(--text-color);
 }
  .elementdesc{
    max-width: 800px;
-   background-color: #ffffff;
+   background-color: var(--div-background-color);
    margin-top: 25px;
  }
  .elementdesc p{
   padding:5px;
+  color: var(--text-color);
  }
  .elementdesc::before{
   display: block;
@@ -106,6 +114,7 @@ section h3 {
   font-size: 25px;
   margin: 10px;
   text-align: center;
+  color: var(--text-color);
  }
 
  h5{
@@ -159,15 +168,20 @@ section h3 {
  .para p{
    margin: 0;
  }
- i{
-  color: aqua;
+ #nav i{
+  color: black;
  }
-
-
+ 
+#nightmode{
+  transition: all 0.5s ease;
+}
+ #nightmode:hover{
+  cursor: pointer;
+ }
 /* Experience Container for experience*/
 .exp-container{
  width: 800px;
- background-color: #ffffff;
+ background-color: var(--div-background-color);
 }
 
 .exp-container::before{
@@ -175,13 +189,13 @@ section h3 {
   content: "Experience";
   font-size: 30px;
  margin-top: 25px;
-  color: #2d3748;
+  color: var(--text-color);
   text-align: center;
  }
 
 .exp-container p{
   margin:0;
-  color:#2d3748;
+  color:var(--text-color);
   font-size: 14px;
 }
 .exp-container .exp-desc p{
@@ -189,7 +203,7 @@ section h3 {
 }
 .exp-container h1{
   margin:0;
-  color:#2d3748;
+  color:var(--text-color);
   font-size: 20px;
 }
 .exp-name{
