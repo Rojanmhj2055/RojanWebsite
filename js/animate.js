@@ -20,22 +20,21 @@ function nightMode(){
 let r = document.querySelector(':root');
 let p = document.getElementById('nightmode');
 let j = document.getElementById('nighticon');
-if(p.classList[0] =='day'){
+if(p.classList.contains('day')){
   r.style.setProperty('--text-color', 'white');
   r.style.setProperty('--background-color', 'black');
   r.style.setProperty('--div-background-color','black');
-  j.classList.remove("fa-moon");
-  j.classList.add("fa-sun");
-  p.classList.remove("day");
-  p.classList.add("night");
-}else if(p.classList[0]=='night'){
+  j.classList.replace("fa-moon","fa-sun");
+  p.setAttribute('data-tooltip','Day Mode');
+  p.classList.replace("day","night");
+  
+}else if(p.classList.contains('night')){
   r.style.setProperty('--text-color', 'black');
   r.style.setProperty('--background-color', '#f7fafc');
   r.style.setProperty('--div-background-color','#ffffff');
-  j.classList.remove("fa-sun");
-  j.classList.add("fa-moon");
-  p.classList.remove("night");
-  p.classList.add("day");
+  p.setAttribute('data-tooltip','Night Mode');
+  j.classList.replace("fa-sun","fa-moon");
+  p.classList.replace("night","day");
 }
 
 

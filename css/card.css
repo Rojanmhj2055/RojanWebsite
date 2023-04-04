@@ -16,9 +16,10 @@ section#projects{
 
 .project-container{
     max-width: 900px;
-    margin: 0rem 0 2rem 2rem;
+    /* margin: 0rem 0 2rem 2rem; */
     
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .project-title{
@@ -53,7 +54,7 @@ section#projects{
     height: 330px;
 }
 .card-description p{
-    font-size: 16px;
+    font-size: 15px;
     line-height: 2rem;
 }
 .card-description i{
